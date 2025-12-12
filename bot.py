@@ -1,3 +1,4 @@
+import os
 from telegram import (
     Update,
     InlineKeyboardButton,
@@ -12,9 +13,8 @@ from telegram.ext import (
     filters
 )
 
-import os
-
-TOKEN = os.getenv("8561347115:AAH7Pf59Llqrv9upyjVF7hc6biG1NsCYrko")  # Railway env variable
+# Correct way to read env variable
+TOKEN = os.getenv("TOKEN")  # Railway env variable
 
 
 # ---------------------------
